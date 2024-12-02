@@ -23,7 +23,7 @@ Use the module-federation third-party library to make a vue module federation de
 - Clone the project
 
 ```bash
-git clone https://github.com/zhengyuxiang/module-federation-vue.git
+git clone git@github.com:gongph/module-federation-vite.git
 ```
 
 - Install dependencies
