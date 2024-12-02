@@ -20,7 +20,6 @@ export default defineConfig({
       filename: "remoteEntry-[hash].js",
       exposes: {
         ".": "./src/App.jsx",
-        "./hello": "./src/HelloWorld.jsx",
       },
       manifest: true,
       shared: {

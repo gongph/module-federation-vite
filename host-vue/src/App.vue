@@ -1,15 +1,17 @@
 <template>
-  <h1>Host side app</h1>
-  <remote-vue-app />
-  <remote-react-component />
+  <div class="w-full h-full flex">
+    <div class="h-screen bg-blue-950">
+      <Sidebar />
+    </div>
+    <div class="flex-1 h-screen flex flex-col">
+      <Header />
+      <Main />
+    </div>
+  </div>
 </template>
 
 <script setup>
-import { applyPureReactInVue } from "veaury";
-import { defineAsyncComponent } from "vue";
-import remoteReactHello from "remote-react/hello";
-// remote vue project component
-const remoteVueApp = defineAsyncComponent(() => import("remote-vue"));
-// remote react project component
-const remoteReactComponent = applyPureReactInVue(remoteReactHello);
+import Header from "./components/Header.vue";
+import Sidebar from "./components/Sidebar.vue";
+import Main from "./components/Main.vue";
 </script>

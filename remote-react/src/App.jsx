@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -7,11 +6,19 @@ function App() {
   return (
     <>
       <h1>from remote react</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <button
+        style={{
+          marginTop: "16px",
+          outline: "none",
+          border: "none",
+          backgroundColor: "#646cff",
+          borderRadius: "5px",
+          padding: "3px 4px",
+        }}
+        onClick={() => setCount((count) => count + 1)}
+      >
+        count is {count}
+      </button>
     </>
   );
 }
