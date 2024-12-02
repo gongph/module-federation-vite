@@ -17,3 +17,27 @@ Use the module-federation third-party library to make a vue module federation de
 - remote react
 
 ![preview](./media/截屏2024-12-02%2015.09.35.png)
+
+## Usage
+
+- Clone the project
+
+```bash
+git clone https://github.com/zhengyuxiang/module-federation-vue.git
+```
+
+- Install dependencies
+
+```bash
+cd remote-vue
+pnpm i
+pnpm preview
+
+cd remote-react
+pnpm i
+pnpm preview
+
+cd host-vue
+pnpm i
+pnpm dev # localhost:5173
+```
